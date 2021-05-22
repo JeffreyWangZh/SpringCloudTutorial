@@ -1,0 +1,26 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: payment8001
+  datasource:
+    url: jdbc:mysql://10.126.21.164:3306/jw9j
+    username: root
+    password: 512731!ncjwa
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: validate
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.jw9j.commons
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
