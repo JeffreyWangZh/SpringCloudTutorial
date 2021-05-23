@@ -5,7 +5,7 @@ spring:
   application:
     name: payment8001
   datasource:
-    url: jdbc:mysql://10.126.21.164:3306/jw9j
+    url: jdbc:mysql://13.73.28.189:3306/jw9j?useSSL=false&requireSSL=false
     username: root
     password: 512731!ncjwa
     driver-class-name: com.mysql.cj.jdbc.Driver
