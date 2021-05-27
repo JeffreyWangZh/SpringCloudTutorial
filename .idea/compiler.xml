@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,6 +10,7 @@
         <module name="api-commons" />
         <module name="loginUntil8000" />
         <module name="eureka-server7001" />
+        <module name="consumer-order80" />
         <module name="payment8001" />
       </profile>
     </annotationProcessing>
@@ -16,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-commons" options="-parameters" />
+      <module name="consumer-order80" options="-parameters" />
       <module name="eureka-server7001" options="-parameters" />
       <module name="loginUntil8000" options="-parameters" />
       <module name="payment8001" options="-parameters" />

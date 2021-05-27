@@ -19,6 +19,7 @@
         <module>loginUntil8000</module>
         <module>eureka-server7001</module>
         <module>api-commons</module>
+        <module>consumer-order80</module>
     </modules>
 
     <!--   统一管理jar包管理 -->
@@ -118,18 +119,6 @@
                 <version>${eureka.version}</version>
             </dependency>
 
-            <!-- JPA     -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>2.3.4.RELEASE</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-devtools</artifactId>
-                <version>${devtools.version}</version>
-            </dependency>
 
             <!--   添加基础类         -->
             <dependency>
