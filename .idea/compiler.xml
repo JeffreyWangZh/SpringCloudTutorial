@@ -9,8 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-commons" />
         <module name="loginUntil8000" />
-        <module name="eureka-server7001" />
         <module name="consumer-order80" />
+        <module name="jwt" />
+        <module name="eureka-server7001" />
+        <module name="leetcode" />
         <module name="payment8001" />
       </profile>
     </annotationProcessing>
@@ -20,6 +22,8 @@
       <module name="api-commons" options="-parameters" />
       <module name="consumer-order80" options="-parameters" />
       <module name="eureka-server7001" options="-parameters" />
+      <module name="jwt" options="-parameters" />
+      <module name="leetcode" options="-parameters" />
       <module name="loginUntil8000" options="-parameters" />
       <module name="payment8001" options="-parameters" />
     </option>
