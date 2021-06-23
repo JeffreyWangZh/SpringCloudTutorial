@@ -10,7 +10,10 @@ public class ThreadJoin101 implements Runnable{
 
     @Override
     public void run() {
-        System.out.println("线程 插队");
+        for (int i = 0; i < 100; i++) {
+            System.out.println("线程 插队"+i);
+        }
+
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -30,6 +33,8 @@ public class ThreadJoin101 implements Runnable{
 class myJoin implements Runnable{
     @Override
     public void run() {
-        System.out.println("");
+        for (int i = 0; i < 100; i++) {
+            System.out.println(Thread.currentThread().getName()+i);
+        }
     }
 }

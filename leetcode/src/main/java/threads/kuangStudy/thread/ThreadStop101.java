@@ -8,7 +8,7 @@ package threads.kuangStudy.thread;
  * @Author jw9j
  * @create 2021/6/22 1:25
  */
-public class Thread101Stop implements Runnable{
+public class ThreadStop101 implements Runnable{
     // 1. 创建标志位
     private boolean flag = true;
     @Override
@@ -24,12 +24,12 @@ public class Thread101Stop implements Runnable{
     }
 
     public static void main(String[] args) {
-        Thread101Stop  thread101Stop = new Thread101Stop();
-        new Thread(thread101Stop).start();
+        ThreadStop101 threadStop101 = new ThreadStop101();
+        new Thread(threadStop101).start();
         for (int i = 0; i < 1000; i++) {
             System.out.println("main"+i);
             if(i==900){
-                thread101Stop.stop();
+                threadStop101.stop();
                 System.out.println("线程停止");
             }
         }

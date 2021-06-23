@@ -1,14 +1,12 @@
 package threads.kuangStudy.thread;
 
-import common.TreeNode;
-
 /**
  * Sleep
  *  模拟网络延迟： 放生问题发生行
  * @Author jw9j
  * @create 2021/6/22 1:36
  */
-public class Thread101Sleep implements Runnable{
+public class ThreadSleep101 implements Runnable{
     private int ticketNums = 10;
 
     // 1. 模拟网络延迟
@@ -28,10 +26,10 @@ public class Thread101Sleep implements Runnable{
     }
 
     public static void main(String[] args) {
-        Thread101Sleep thread101Sleep = new Thread101Sleep();
-        new Thread(thread101Sleep,"小明").start();
-        new Thread(thread101Sleep,"老师").start();
-        new Thread(thread101Sleep,"黄牛").start();
+        ThreadSleep101 threadSleep101 = new ThreadSleep101();
+        new Thread(threadSleep101,"小明").start();
+        new Thread(threadSleep101,"老师").start();
+        new Thread(threadSleep101,"黄牛").start();
 
     }
 }
