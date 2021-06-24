@@ -1,3 +1,5 @@
 eureka-server7001/target/
 api-commons/target/
 payment8001/target/
+^.class
+leetcode/target
